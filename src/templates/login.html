@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    /* Navbar styles */
+    nav {
+      background-color: #007bff;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    /* Page styles */
+    body {
+        display: flex;
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 60px 0 0;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        box-sizing: border-box;
+    }
+
+    .form-div {
+        flex-direction: column;
+    }
+
+    .login-form {
+        width: 80%;
+        max-width: 300px;
+        text-align: center;
+    }
+    input[type="text"], input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        box-sizing: border-box;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="register">Register</a></li>
+      <li><a href="login">Login</a></li>
+      <li><a href="welcome">Welcome</a></li>
+    </ul>
+  </nav>
+  <!-- Left side: Standard Login Form -->
+  <div class="form-div">
+      <div class="login-form">
+          <h2>Login</h2>
+          <form method="POST">
+              <!-- Show Username and Password Fields -->
+              <input type="text" name="username" placeholder="Username" required><br>
+              <input type="password" name="password" placeholder="Password" required><br>
+              <button type="submit">Submit</button>
+          </form>
+      </div>
+      <!-- Register Button -->
+      <div class="button-container register-button">
+          <p>Create an account. <a href="register">Sign up</a></p>
+      </div>
+  </div>
+</body>
+</html>
